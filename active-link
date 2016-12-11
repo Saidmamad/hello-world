@@ -1,0 +1,21 @@
+#I am faced with a problem. I wanna that when clicking on <li> tags, it should take class "active". 
+# I have found a piece of code in Internet. But it does not work. Here I will bring it
+
+<ul class="mn-sub">
+				
+    <li><a href="../home/about-us.php">About us</a></li>
+    <li class="active"><a href="../index.html">Why travel with us?</a></li>
+    <li><a href="../index-search.html">Our partners</a></li>
+    <li><a href="../index-slider.html">News</a></li>
+    <li><a href="../index-video.html">Links</a></li>
+ </ul>
+ 
+ # Java script code
+ 
+ <script>
+    $(".mn-sub li").on("click", function() {
+      $(".mn-sub li").removeClass("active");
+      $(this).addClass("active");
+    });
+
+</script>
